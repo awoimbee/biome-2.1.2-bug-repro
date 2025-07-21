@@ -1,0 +1,19 @@
+{
+  "name": "myworkspace",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "fmt": "./node_modules/@biomejs/biome/bin/biome format .",
+    "lint": "./node_modules/@biomejs/biome/bin/biome lint .",
+    "fix": "pnpm run lint --fix; pnpm run fmt --fix",
+    "type-check": "tsc --noEmit --skipLibCheck"
+  },
+  "dependencies": {
+    "tsx": "^4.20.3"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "2.1.2",
+    "@types/node": "^24.0.13",
+    "typescript": "^5.8.3"
+  }
+}
